@@ -4,73 +4,133 @@ body{
    flex-direction: column;
    margin: 0;
    padding: 0;
-   font-family: my-cool-font;
-
-   
 }
-
-.header, .media-top, .footer{
+body div{
+border: 2px solid red;/*trying to see the edges of divs here*/  
+}
+ul {
+    display:flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    list-style: none;
+  }
+.header, .media-top, a, .footer{
    display: flex; 
    background-color:#1F2937;
    flex-wrap: wrap;
    color: #f9faf8;
+   flex:auto;
     }
+.header{
+    justify-content: space-around;
+}
 
-
-    /*class for image holder npt sure yet header-logo" src="" alt="logo">*/  
-a {;
-
+.header-logo{
+align-content: flex-start;
+   }
+.header-right{
+    align-self: end;
+}
+   
+a {   
+    text-decoration: none;
     font-size: 18px  
     }
     
 .media-top{
-
-
+padding: 20px;
+justify-content: center;
     }
  /*class for image holder npt sure yet <img class="top-media" */
-    
+.blurb{
+    padding: 10px;
+} 
+ 
 .blurb h1{
     font-size: 48px;
     font-weight: 900 ;
+    }    
 
-    }            
-      
+.blurb > button{
+        background-color:#3882f6;
+    border-radius: 12px;
+    color: #e5f7eb;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;    
+}   
+.signup-container > .container> button{
+    background-color: #3882f6;
+    border-radius: 12px;
+    color: #e5f7eb;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;    
+  
+}  
+button{
+    color: #e5e7eb;
+    border-color: #e5e7eb;
+}  
+
 
 .image-strip{
 display: flex;
 justify-content: center;
+color: #1F2937;
 
-text-align: center;
+flex-wrap: wrap;
+gap: 52px;
  }
-.image-strip h2{
-   
+.strip-info{
+    font-size: 36px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px ;
+    padding-bottom:50px;
+    color: #1F2937;
+    font-size: 36px;
 }
 
       
 .strip-image{
-
+    max-width: 150px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
     }
+.strip-image > img{
+    border: 3px solid #3882f6;
+    border-radius: 12px;
+    min-width: 150px;
+    min-height: 150px;
+}
    
 .testimonial{
 background-color: #e5e7eb;
 color: #1F2937;
-  flex: auto;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
  }
      
 .signup-container{
-flex: 1;
-    }
-       
-button{
-      background-color:#3882f6;
- border-radius: 12px;
-color: #e5f7eb;
-border: none;
-font-size: 18px;
-padding: 5px 10px 5px 10px;
-    }
+    display:flex ;
+    padding: 20px;
+    justify-content: center;
+} 
+.container{    
+background-color:#3882f6;
 
-   .footer{
+justify-content: space-between;
+
+    }
+    
+
+
+.footer{
     justify-content: center;
     align-content: center;
 
