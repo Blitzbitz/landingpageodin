@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
    display:flex;
    flex-direction: column;
@@ -17,6 +17,7 @@ body * {
    flex-wrap: wrap;
    color: #f9faf8;
    flex:auto;
+   padding: 20px;
     }
 .header{
     justify-content: space-around;
@@ -49,7 +50,7 @@ justify-content: center;
     padding: 10px;
 } 
  
-.blurb h1{
+.blurb .hero-blurb{
     font-size: 48px;
     font-weight: 900 ;
     }    
@@ -63,6 +64,10 @@ justify-content: center;
     margin-top: 10px; 
     box-shadow:none   
 }   
+.top-media{
+    height: 148px;;
+
+}
 
 button{
     color: #e5e7eb;
@@ -114,12 +119,22 @@ align-content: center;
 justify-content: center;
 flex-wrap: wrap;
  }
- .testimonial > .container{
+.testimonial > .container{
     display: flex;
-    align-items:flex-end ;
+    justify-content:flex-end ;
     flex-wrap: wrap;
- }    
-.signup-container{
+    background-color: #e5e7eb;
+    padding: 50px;
+    font-size: 36px;
+    font-style: italic ;
+    color: #1F2937;
+    font-weight: lighter;
+    border-color: brown;
+}    
+.testimonial >.container> #quotee{
+    font-weight: bold;
+}
+.quote-container{
     display:flex ;
     padding: 20px;
     justify-content: center;
@@ -129,16 +144,28 @@ flex-wrap: wrap;
     justify-content: space-between;
 
     }
-.signup-container > .container> button{
+.quote-container > .container button{
         background-color: #3882f6;
         border-radius: 12px;
         color: #e5f7eb;
         font-size: 18px;
         padding: 5px 10px 5px 10px;
         margin-top: 10px;    
-        box-shadow:none
+        box-shadow:none;
+        flex: none;
+        
     }  
-    
+    .quote-container > .container{
+        display:flex;
+        border-radius: 12px;
+        padding: 20px;
+        justify-content: center;
+        color: #e5e7eb;
+        align-items: center;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
 
 .footer{
